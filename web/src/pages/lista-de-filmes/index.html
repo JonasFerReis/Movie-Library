@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content = "width = device - width, initial-scale = 1.0">
+        <link rel = "stylesheet" href = "./styles.css">
+        <link rel = "stylesheet" href = "../../globalStyles.css">
+        <title>Mistério</title>
+    </head>
+
+    <body>
+        <header class = "header">
+            <h1>Lista de Filmes</h1>
+        </header>
+
+        <main class = "main">
+            <div class = "campoBuscar">
+                <input type = "text" placeholder = "Buscar" />
+            </div>
+            <div class = "listaDeFilmes">
+                <p id = "carregando">Carregando...</p>
+            </div>
+            <div class = "btnContainer">
+                <a href = "../adicionar-filme/index.html">
+                    <button>Adicionar Filme</button>
+                </a>
+            </div>
+        </main>
+
+        <footer class = "footer">
+            <p>&copy; Jonas Fernandes 2022</p>
+        </footer>
+
+        <script src = "https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src = "./script.js"></script>
+    </body>
+</html>

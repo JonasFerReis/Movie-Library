@@ -1,0 +1,76 @@
+{
+  "filmes": [
+    {
+      "id": "1",
+      "nome": "Miranha",
+      "diretor": "Tarantino",
+      "editora": "Marvel",
+      "lancamento": "28/12/2022",
+      "genero": "ação",
+      "duracao": "130 minutos"
+    },
+    {
+      "id": "1",
+      "nome": "Midiferro",
+      "diretor": "Steven Spillberg",
+      "editora": "DC",
+      "lancamento": "28/12/2022",
+      "genero": "aventura",
+      "duracao": "120 minutos"
+    },
+    {
+      "id": "6tr7e3z",
+      "nome": "Chadão Negro",
+      "diretor": "Gran Torino",
+      "editora": "Amazon",
+      "lancamento": "10/02/2022",
+      "genero": "ação",
+      "duracao": "90 minutos"
+    },
+    {
+      "id": "4NCeyss",
+      "nome": "Ilha do Medo",
+      "diretor": "Leonardo DiCaprio",
+      "editora": "Activision",
+      "lancamento": "2002-12-06",
+      "genero": "Terror",
+      "duracao": "126 minutos"
+    },
+    {
+      "id": "3oL6jWr",
+      "nome": "daw",
+      "diretor": "dadwad",
+      "editora": "dawdaw",
+      "lancamento": "dadaw",
+      "genero": "dadwa",
+      "duracao": "1"
+    },
+    {
+      "id": "F2jM0XK",
+      "nome": "Teste",
+      "diretor": "Teste",
+      "editora": "teste",
+      "lancamento": "teste",
+      "genero": "teste",
+      "duracao": "20"
+    },
+    {
+      "id": "ch1C9xW",
+      "nome": "AA",
+      "diretor": "aAA",
+      "editora": "AAA",
+      "lancamento": "dwww",
+      "genero": "dwdw",
+      "duracao": "333"
+    },
+    {
+      "id": "lorWVwf",
+      "nome": "dwa",
+      "diretor": "dwadawdwa",
+      "editora": "dwa",
+      "lancamento": "dwd",
+      "genero": "dwdw",
+      "duracao": "222"
+    }
+  ]
+}

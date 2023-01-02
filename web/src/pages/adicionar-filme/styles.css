@@ -1,0 +1,108 @@
+.inputDiv {
+    display: flex;
+    width: 80%;
+    gap: 1em;
+    padding-top: 2em;
+    margin: auto;
+}
+
+.inputDiv div {
+    width: 100%;
+}
+
+.inputDiv label {
+    font-size: 12pt;
+    font-weight: 600;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.inputDiv input {
+    width: 100%;
+    height: 3em;
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 1em;
+}
+
+.inputDiv span {
+    position: absolute;
+    color: rgb(255, 0, 0);
+    padding-top: 6px;
+    font-weight: 600;
+    -webkit-text-stroke: 0.5px #000;
+}
+
+.inputDiv input:focus {
+    outline: none;
+}
+
+.btnContainer {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.btn {
+    width: 12vw;
+    height: 2em;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+}
+
+#cancelar {
+    background-color: rgba(200, 0, 0, 0.6);
+}
+
+#confirmar {
+    background-color: rgba(0, 200, 0, 0.6);
+}
+
+#cancelar:hover {
+    background-color: rgba(220, 0, 0, 1);
+}
+
+#confirmar:hover {
+    background-color: rgba(0, 220, 0, 1);
+}
+
+#loading {
+    text-align: center;
+    padding-top: 5em;
+    font-weight: 600;
+    font-size: 15pt;
+    color: #fff;
+}
+
+#divResposta {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 3em;
+    position: relative;
+    top: 20%;
+}
+
+#divResposta p {
+    font-weight: 600;
+    font-size: 15pt;
+    color: #fff;
+}
+
+#divResposta img {
+    width: 6em;
+}
+
+#divResposta button {
+    width: 12vw;
+    height: 2em;
+    border: none;   
+    border-radius: 6px;
+    color: #fff;
+    background-color: rgba(0, 200, 0, 0.6);
+}
+
+#divResposta button:hover {
+    background-color: rgba(0, 220, 0, 1);
+}

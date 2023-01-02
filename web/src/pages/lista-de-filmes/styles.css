@@ -1,0 +1,60 @@
+.campoBuscar {
+    text-align: center;
+}
+
+.campoBuscar input {
+    width: 80%;
+    height: 3em;
+    margin-top: 2em;
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 1em;
+}
+
+.campoBuscar input::placeholder {
+    padding-left: 1em;
+    color: #000;
+}
+
+.listaDeFilmes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 80%;
+    margin: auto;
+    padding-top: 2em;
+}
+
+.listaDeFilmes p {
+    padding: 8px;
+    border-radius: 6px;
+    background-color: rgb(220, 220, 220);
+}
+
+.listaDeFilmes p:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+#carregando {
+    text-align: center;
+    background-color: initial;
+    font-size: 13pt;
+}
+
+.btnContainer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.btnContainer button {
+    width: 12vw;
+    height: 2em;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background-color: rgb(0, 200, 0, 0.6);
+}
+
+.btnContainer button:hover {
+    background-color: rgb(0, 220, 0, 1);
+}

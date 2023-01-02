@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "json-server": "^0.17.1"
+  },
+  "scripts": {
+    "server": "json-server db.json --watch --port 3333"
+  }
+}

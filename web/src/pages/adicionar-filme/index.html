@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "./styles.css">
+        <link rel = "stylesheet" href = "../../globalStyles.css">
+        <title>Mistério</title>
+    </head>
+
+    <body>
+        <header class = "header">
+            <h1>Adicionar Filme</h1>
+        </header>
+
+        <main class = "main">
+            <form>
+                <div class = "inputDiv">
+                    <div>
+                        <label for = "nomeDoFilme">Nome do Filme</label>
+                        <input class = "input" id = "nomeDoFilme" maxlength = "40" oninput = "validarNome()"/>
+                        <div>
+                            <span hidden class = "errorSpan">Mínimo de 1 caracter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "inputDiv">
+                    <div>
+                        <label for = "diretor">Diretor</label>
+                        <input class = "input" id = "diretor" maxlength = "40" oninput = "validarDiretor()"/>
+                        <div>
+                            <span hidden class = "errorSpan">Mínimo de 3 caracter</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for = "editora">Editora</label>
+                        <input class = "input" id = "editora" maxlength = "20" oninput = "validarEditora()"/>
+                        <div>
+                            <span hidden class = "errorSpan">Mínimo de 3 caracter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class = "inputDiv">
+                    <div>
+                        <label for = "lancamento">Lançamento</label>
+                        <input class = "input" id = "lancamento" oninput = "validarLancamento()"/>
+                        <div>
+                            <span hidden class = "errorSpan">Mínimo de 1 caracter</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for = "genero">Gênero</label>
+                        <input class = "input" id = "genero" list = "listaDeGeneros" oninput = "validarGenero()"/>
+                        <datalist id = "listaDeGeneros">
+                            <option>Ação</option>
+                            <option>Aventura</option>
+                            <option>Comédia</option>
+                            <option>Romance</option>
+                            <option>Drama</option>
+                            <option>Terror</option>
+                        </datalist>
+                        <div>
+                            <span hidden class = "errorSpan">Mínimo de 1 caracter</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for = "duracao">Duração</label>
+                        <input class = "input" id = "duracao" type = "number" oninput = "validarDuracao()"/>
+                        <div>
+                            <span hidden class = "errorSpan">Mínimo de 1 caracter</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+            <div class = "btnContainer">
+                <a href = "../lista-de-filmes/index.html"><button class = "btn" id = "cancelar">Cancelar</button> </a>
+                <button class = "btn" id = "confirmar" onclick = "adicionarFilme()">Confirmar</button>
+            </div>
+        </main>
+
+        <footer class = "footer">
+            <p>&copy; Jonas Fernandes 2022</p>
+        </footer>
+    </body>
+
+    <script src = "https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src = "./script.js"></script>
+</html>
