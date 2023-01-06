@@ -1,0 +1,48 @@
+.dadosContainer {
+    display: flex;
+    justify-content:flex-start;
+    width: 70%;
+    margin: auto;
+    gap: 1em;
+    padding-top: 3em;
+}
+
+.metadados, .dados {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 1em;
+}
+
+.metadados span {
+    font-weight: 600;
+}
+
+.btnContainer {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.deleteModal {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 40vw;
+    height: 40vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1em;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
+.deleteModal p {
+    padding-top: 4em;
+    font-size: 15pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.deleteModal button {
+    margin-top: 4em;
+}
