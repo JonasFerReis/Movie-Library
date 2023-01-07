@@ -42,31 +42,7 @@
     margin-top: 5em;
 }
 
-.btn {
-    width: 12vw;
-    height: 2em;
-    border: none;
-    border-radius: 6px;
-    color: #fff;
-}
-
-#cancelar {
-    background-color: rgba(200, 0, 0, 0.6);
-}
-
-#confirmar {
-    background-color: rgba(0, 200, 0, 0.6);
-}
-
-#cancelar:hover {
-    background-color: rgba(220, 0, 0, 1);
-}
-
-#confirmar:hover {
-    background-color: rgba(0, 220, 0, 1);
-}
-
-#loading {
+/* #loading {
     text-align: center;
     padding-top: 5em;
     font-weight: 600;
@@ -105,4 +81,4 @@
 
 #divResposta button:hover {
     background-color: rgba(0, 220, 0, 1);
-}
+} */

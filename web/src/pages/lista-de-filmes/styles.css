@@ -29,6 +29,7 @@
     padding: 8px;
     border-radius: 6px;
     background-color: rgb(220, 220, 220);
+    cursor: pointer;
 }
 
 .listaDeFilmes p:hover {
@@ -44,17 +45,4 @@
 .btnContainer {
     margin-top: 2em;
     text-align: center;
-}
-
-.btnContainer button {
-    width: 12vw;
-    height: 2em;
-    border: none;
-    border-radius: 6px;
-    color: #fff;
-    background-color: rgb(0, 200, 0, 0.6);
-}
-
-.btnContainer button:hover {
-    background-color: rgb(0, 220, 0, 1);
 }

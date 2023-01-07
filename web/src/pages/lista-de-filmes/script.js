@@ -5,11 +5,14 @@ axios.get("http://localhost:3333/filmes").then((response) => {
     listaDeFilmes.removeChild(p1)
 
     if (response.data.length > 0) {
-        for (var i in response.data) {
-            var filme = document.createElement("p")
-            filme.innerHTML = response.data[i].nome
-            listaDeFilmes.appendChild(filme)
-        }
+        response.data.map((filme) => {
+            var p2 = document.createElement("p")
+            p2.innerHTML = filme.nome
+            p2.addEventListener("click", () => {
+                location.href = `../dados-do-filme/index.html?id=${filme.id}`
+            })
+            listaDeFilmes.appendChild(p2)
+        })
     }
     else {
         var listaVazia = document.createElement("p")

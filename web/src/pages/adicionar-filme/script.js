@@ -78,43 +78,6 @@ function validarDuracao() {
     }
 }
 
-function telaDeLoading(texto) {
-    var main = document.querySelector(".main")
-    var span = document.createElement("p")
-
-    span.id = "loading"    
-    span.innerHTML = texto
-
-    main.innerHTML = ""
-    main.appendChild(span)
-}
-
-function telaDeResposta(texto, imagemURL) {
-    var main = document.querySelector(".main")
-    var div = document.createElement("div")
-    var imagem = document.createElement("img")
-    var botao = document.createElement("button")
-    var p = document.createElement("p")
-    
-    imagem.setAttribute("src", imagemURL)
-    imagem.setAttribute("alt", "LogoDeResposta")
-
-    botao.innerHTML = "Voltar"
-    botao.addEventListener("click", () => {
-        location.href = "../lista-de-filmes/index.html"
-    })
-
-    p.innerHTML = texto
-
-    div.id = "divResposta"
-    div.appendChild(imagem)
-    div.appendChild(p)
-    div.appendChild(botao)
-
-    main.innerHTML = ""
-    main.appendChild(div)
-}
-
 const FILME = {
     id: "",
     nome: "",
