@@ -27,9 +27,9 @@ function deletarFilme() {
     telaDeLoading("Processando...")
     axios.delete(`http://localhost:3333/filmes/${id}`)
         .then(() => {
-            location.href = "../lista-de-filmes/index.html"
+            location.href = "../tela-de-resposta/index.html?v=teste"
         })
         .catch((err) => {
-            telaDeResposta("Erro ao excluir o filme<br/>" + err, "../../assets/logo_error.png")
+            location.href = "../tela-de-resposta/index.html/teste"
         })
 }

@@ -1,3 +1,31 @@
 {
-  "filmes": []
+  "filmes": [
+    {
+      "id": 1,
+      "nome": "dwadwa",
+      "diretor": "dwadwa",
+      "editora": "dawdwa",
+      "lancamento": "dwadaw",
+      "genero": "dawdwa213321",
+      "duracao": "321321"
+    },
+    {
+      "id": 1,
+      "nome": "dwadwa",
+      "diretor": "dwadwa",
+      "editora": "dawdwa",
+      "lancamento": "dwadaw",
+      "genero": "dawdwa213321",
+      "duracao": "321321"
+    },
+    {
+      "id": 1,
+      "nome": "dwadwa",
+      "diretor": "dwadwa",
+      "editora": "dawdwa",
+      "lancamento": "dwadaw",
+      "genero": "dawdwa213321",
+      "duracao": "321321"
+    }
+  ]
 }
