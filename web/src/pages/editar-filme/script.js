@@ -111,7 +111,7 @@ function validarDuracao() {
 }
     
 function editarFilme() {
-    if (validarNome() && validarDiretor() && validarEditora() && validarLancamento() && validarDuracao) {
+    if (validarNome() && validarDiretor() && validarEditora() && validarLancamento() && validarDuracao()) {
         const FILME = {
             id: "",
             nome: "",
