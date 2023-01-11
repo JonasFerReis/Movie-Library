@@ -13,6 +13,7 @@
         <header class = "header">
             <h1>Dados do filme</h1>
         </header>
+
         <main class = "main">
             <div class = "dadosContainer">
                 <div class = "metadados">
@@ -32,17 +33,20 @@
                     <span></span>
                 </div>
             </div>
+
             <div class = "deleteModal">
                 <p>Tem certeza que deseja excluir esse filme?</p>
                 <button onclick = "desativarModal()" class = "btn verde">Cancelar</button>
                 <button onclick = "deletarFilme()" class = "btn vermelho">Continuar</button>
             </div>
+
             <div class = "btnContainer">
                 <a href = "../lista-de-filmes/index.html"><button class = "btn verde">Voltar</button></a>
                 <button onclick = "editarFilme()" class = "btn verde">Editar</button>
                 <button onclick = "ativarModal()" class = "btn vermelho">Excluir</button>
             </div>
         </main>
+        
         <footer class = "footer">
             <p>Jonas Fernandes &copy; 2023</p>
         </footer>

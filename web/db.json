@@ -1,13 +1,31 @@
 {
   "filmes": [
     {
-      "id": 7,
-      "nome": "Vingadores: Era de Ultron",
-      "diretor": "Aquele cara bom lá",
-      "editora": "Marvel",
-      "lancamento": "20/02/2015",
+      "id": 1,
+      "nome": "teste",
+      "diretor": "teste",
+      "editora": "teste",
+      "lancamento": "22/22/2222",
       "genero": "Ação",
-      "duracao": "01h30"
+      "duracao": "11h11"
+    },
+    {
+      "id": 2,
+      "nome": "Missao impossivel",
+      "diretor": "tom cruise",
+      "editora": "wall disney",
+      "lancamento": "22/22/2222",
+      "genero": "Ação",
+      "duracao": "03h49"
+    },
+    {
+      "id": 3,
+      "nome": "harry potter",
+      "diretor": "cara lá",
+      "editora": "disney",
+      "lancamento": "20/12/2003",
+      "genero": "Ação",
+      "duracao": "01h58"
     }
   ]
 }

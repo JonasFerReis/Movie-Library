@@ -16,6 +16,10 @@
     color: #000;
 }
 
+.campoBuscar input:focus {
+    outline: none;
+}
+
 .listaDeFilmes {
     display: flex;
     flex-direction: column;
@@ -36,10 +40,11 @@
     background-color: rgb(150, 150, 150);
 }
 
-#carregando {
+.listaDeFilmes span {
     text-align: center;
-    background-color: initial;
-    font-size: 13pt;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: 600;
 }
 
 .btnContainer {
