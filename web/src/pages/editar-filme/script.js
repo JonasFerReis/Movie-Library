@@ -1,8 +1,26 @@
+const urlParams = new URLSearchParams(window.location.search)
+const id = urlParams.get("id")
+
+var inputs = document.querySelectorAll(".input")
+
+axios.get(`http://localhost:3333/filmes/${id}`)
+    .then((res) => {
+        inputs[0].value = res.data.nome
+        inputs[1].value = res.data.diretor
+        inputs[2].value = res.data.editora
+        inputs[3].value = res.data.lancamento
+        inputs[4].value = res.data.genero
+        inputs[5].value = res.data.duracao
+    })
+    .catch((err) => {
+        console.error("DEU ERRO:" + err)
+    })
+
 const mask = {
     time(value) {
         return value
-        .replace(/\D/g, "")
-        .replace(/^(\d{2})(\d)/, "$1h$2")
+            .replace(/\D/g, "")
+            .replace(/^(\d{2})(\d)/, "$1h$2")
     },
 
     date(value) {
@@ -12,8 +30,7 @@ const mask = {
             .replace(/^(\d{2})[/](\d{2})(\d{1})/, "$1/$2/$3")
     }
 }
-    
-var inputs = document.querySelectorAll(".input")
+
 var errSpan = document.querySelectorAll(".errorSpan")
 
 function setError(i, texto){
@@ -77,7 +94,6 @@ function validarLancamento() {
         removeError(3)
         return true
     }
-
 }
 
 function validarDuracao() {
@@ -93,9 +109,9 @@ function validarDuracao() {
         return true
     }
 }
-
-function adicionarFilme() {
-    if(validarNome() && validarDiretor() && validarEditora() && validarLancamento() && validarDuracao()) {
+    
+function editarFilme() {
+    if (validarNome() && validarDiretor() && validarEditora() && validarLancamento() && validarDuracao) {
         const FILME = {
             id: "",
             nome: "",
@@ -103,23 +119,27 @@ function adicionarFilme() {
             editora: "",
             lancamento: "",
             genero: "",
-            duracao: "",
+            duracao: ""
         }
 
+        var inputs = document.querySelectorAll(".input")    
         FILME.nome = inputs[0].value
         FILME.diretor = inputs[1].value
         FILME.editora = inputs[2].value
         FILME.lancamento = inputs[3].value
         FILME.genero = inputs[4].value
         FILME.duracao = inputs[5].value
-        
-        axios.post("http://localhost:3333/filmes", FILME).then(() => {
-            console.log("Sucesso!")
-        }).catch((err) => {
-            console.log("ERRO:" + err)
-        })
+
+        axios.put(`http://localhost:3333/filmes/${id}`, FILME)
+            .then((res) => {
+                console.log(res)
+            })
+            .catch((err) => {
+                console.error("ERRO:" + err)
+            })
     }
-    else {
-        console.log("FORM INVALIDO")
-    }
+}
+
+function voltar() {
+    window.history.back(1)
 }

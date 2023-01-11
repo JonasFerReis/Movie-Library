@@ -1,31 +1,13 @@
 {
   "filmes": [
     {
-      "id": 1,
-      "nome": "dwadwa",
-      "diretor": "dwadwa",
-      "editora": "dawdwa",
-      "lancamento": "dwadaw",
-      "genero": "dawdwa213321",
-      "duracao": "321321"
-    },
-    {
-      "id": 1,
-      "nome": "dwadwa",
-      "diretor": "dwadwa",
-      "editora": "dawdwa",
-      "lancamento": "dwadaw",
-      "genero": "dawdwa213321",
-      "duracao": "321321"
-    },
-    {
-      "id": 1,
-      "nome": "dwadwa",
-      "diretor": "dwadwa",
-      "editora": "dawdwa",
-      "lancamento": "dwadaw",
-      "genero": "dawdwa213321",
-      "duracao": "321321"
+      "id": 7,
+      "nome": "Vingadores: Era de Ultron",
+      "diretor": "Aquele cara bom lá",
+      "editora": "Marvel",
+      "lancamento": "20/02/2015",
+      "genero": "Ação",
+      "duracao": "01h30"
     }
   ]
 }

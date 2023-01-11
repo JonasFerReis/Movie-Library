@@ -12,7 +12,7 @@ axios.get(`http://localhost:3333/filmes/${id}`).then((response) => {
     dadosDoFilme[4].innerHTML += response.data.genero
     dadosDoFilme[5].innerHTML += response.data.duracao
 }).catch((err) => {
-    console.log(err)
+    console.error("DEU ERRO: " + err)
 })
 
 function ativarModal() {
@@ -24,12 +24,15 @@ function desativarModal() {
 }
 
 function deletarFilme() {
-    telaDeLoading("Processando...")
     axios.delete(`http://localhost:3333/filmes/${id}`)
         .then(() => {
-            location.href = "../tela-de-resposta/index.html?v=teste"
+            console.log("Sucesso!")
         })
         .catch((err) => {
-            location.href = "../tela-de-resposta/index.html/teste"
+            console.error("DEU ERRO: " + err)
         })
+}
+
+function editarFilme() {
+    location.href = `../editar-filme/index.html?id=${id}`
 }
