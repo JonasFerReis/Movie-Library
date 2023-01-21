@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "./styles.css">
+        <link rel = "stylesheet" href = "../../global_styles.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <header class = "header">
+            <h1>Dados do filme</h1>
+        </header>
+
+        <main class = "main">
+            <div class = "dadosContainer">
+                <div class = "metadados">
+                    <span>Nome do filme: </span>
+                    <span>Diretor: </span>
+                    <span>Editora: </span>
+                    <span>Lançamento: </span>
+                    <span>Genêro: </span>
+                    <span>Duração: </span>
+                </div>
+                <div class = "dados">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class = "deleteModal">
+                <p>Tem certeza que deseja excluir esse filme?</p>
+                <button onclick = "desativarModal()" class = "btn verde">Cancelar</button>
+                <button onclick = "deletarFilme()" class = "btn vermelho">Continuar</button>
+            </div>
+
+            <div class = "btnContainer">
+                <a href = "../lista-de-filmes/index.html"><button class = "btn verde">Voltar</button></a>
+                <button onclick = "editarFilme()" class = "btn verde">Editar</button>
+                <button onclick = "ativarModal()" class = "btn vermelho">Excluir</button>
+            </div>
+        </main>
+        
+        <footer class = "footer">
+            <p>Jonas Fernandes &copy; 2023</p>
+        </footer>
+    </body>
+
+    <script src = "https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src = "./script.js"></script>
+</html>

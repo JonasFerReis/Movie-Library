@@ -6,45 +6,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "./styles.css">
         <link rel = "stylesheet" href = "../../global_styles.css">
-        <title>Mistério</title>
+        <title>Document</title>
     </head>
 
     <body>
         <header class = "header">
-            <h1>Adicionar Filme</h1>
+            <h1>Editar filme</h1>
         </header>
 
         <main class = "main">
-            <form>
+            <form class = "form">
                 <div class = "inputDiv">
                     <div>
-                        <label for = "nomeDoFilme">Nome do Filme</label>
-                        <input oninput = "validarNome()" class = "input" id = "nomeDoFilme" maxlength = "50"/>
+                        <label for = "nomeDoFilme">Nome do filme:</label>
+                        <input oninput = "validarNome()" class = "input" id = "nomeDoFilme" maxlength = "50">
+                        <span class = "errorSpan"></span>
+                    </div>
+                </div>
+                    
+                <div class = "inputDiv">
+                    <div>
+                        <label for = "diretor">Diretor:</label>
+                        <input oninput = "validarDiretor()" class = "input" id = "diretor" maxlength = "20">
+                        <span class = "errorSpan"></span>
+                    </div>
+                    <div>
+                        <label for = "editora">Editora:</label>
+                        <input oninput = "validarEditora()" class = "input" id = "editora" maxlength = "20">
                         <span class = "errorSpan"></span>
                     </div>
                 </div>
 
                 <div class = "inputDiv">
                     <div>
-                        <label for = "diretor">Diretor</label>
-                        <input oninput = "validarDiretor()" class = "input" id = "diretor" maxlength = "20"/>
+                        <label for = "lancamento">Lançamento:</label>
+                        <input oninput = "validarLancamento()" class = "input" id = "lancamento" maxlength = "10">
                         <span class = "errorSpan"></span>
                     </div>
                     <div>
-                        <label for = "editora">Editora</label>
-                        <input oninput = "validarEditora()" class = "input" id = "editora" maxlength = "20"/>
-                        <span class = "errorSpan"></span>
-                    </div>
-                </div>
-
-                <div class = "inputDiv">
-                    <div>
-                        <label for = "lancamento">Lançamento</label>
-                        <input oninput = "validarLancamento()" class = "input" id = "lancamento" maxlength = "10"/>
-                        <span class = "errorSpan"></span>
-                    </div>
-                    <div>
-                        <label for = "genero">Gênero</label>
+                        <label for = "genero">Genêro:</label>
                         <select class = "input" id = "genero">
                             <option>Ação</option>
                             <option>Aventura</option>
@@ -56,21 +56,21 @@
                         <span class = "errorSpan"></span>
                     </div>
                     <div>
-                        <label for = "duracao">Duração</label>
-                        <input oninput = "validarDuracao()" class = "input" id = "duracao" maxlength = "5"/>
+                        <label for = "duracao">Duração:</label>
+                        <input oninput = "validarDuracao()" class = "input" id = "duracao" maxlength = "5">
                         <span class = "errorSpan"></span>
                     </div>
                 </div>
-                
+
                 <div class = "btnContainer">
-                    <a href = "../lista-de-filmes/index.html"><button class = "btn vermelho" form = "none">Cancelar</button> </a>
-                    <button onclick = "adicionarFilme()" class = "btn verde" form = "none">Confirmar</button>
+                    <button onclick = "voltar()" class = "btn vermelho" form = "none">Cancelar</button>
+                    <button onclick = "editarFilme()" class = "btn verde" form = "none">Atualizar</button>
                 </div>
             </form>
         </main>
 
         <footer class = "footer">
-            <p>&copy; Jonas Fernandes 2022</p>
+            <p>Jonas Fernandes &copy; 2023</p>
         </footer>
     </body>
 

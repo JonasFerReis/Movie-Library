@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name = "viewport" content = "width = device - width, initial-scale = 1.0">
         <link rel = "stylesheet" href = "./styles.css">
-        <link rel = "stylesheet" href = "../../globalStyles.css">
+        <link rel = "stylesheet" href = "../../global_styles.css">
         <title>Mistério</title>
     </head>
 
@@ -16,20 +16,20 @@
 
         <main class = "main">
             <div class = "campoBuscar">
-                <input type = "text" placeholder = "Buscar" />
+                <input oninput = "buscar()" type = "search" placeholder = "Buscar" />
             </div>
+
             <div class = "listaDeFilmes">
-                <p id = "carregando">Carregando...</p>
+                <span>Carregando...</span>
             </div>
+
             <div class = "btnContainer">
-                <a href = "../adicionar-filme/index.html">
-                    <button>Adicionar Filme</button>
-                </a>
+                <a href = "../adicionar-filme/index.html"><button class = "btn verde">Adicionar Filme</button></a>
             </div>
         </main>
 
         <footer class = "footer">
-            <p>&copy; Jonas Fernandes 2022</p>
+            <p>Jonas Fernandes &copy; 2023</p>
         </footer>
 
         <script src = "https://unpkg.com/axios/dist/axios.min.js"></script>

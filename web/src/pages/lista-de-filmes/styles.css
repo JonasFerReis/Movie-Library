@@ -16,6 +16,10 @@
     color: #000;
 }
 
+.campoBuscar input:focus {
+    outline: none;
+}
+
 .listaDeFilmes {
     display: flex;
     flex-direction: column;
@@ -29,32 +33,21 @@
     padding: 8px;
     border-radius: 6px;
     background-color: rgb(220, 220, 220);
+    cursor: pointer;
 }
 
 .listaDeFilmes p:hover {
     background-color: rgb(150, 150, 150);
 }
 
-#carregando {
+.listaDeFilmes span {
     text-align: center;
-    background-color: initial;
-    font-size: 13pt;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: 600;
 }
 
 .btnContainer {
     margin-top: 2em;
     text-align: center;
-}
-
-.btnContainer button {
-    width: 12vw;
-    height: 2em;
-    border: none;
-    border-radius: 6px;
-    color: #fff;
-    background-color: rgb(0, 200, 0, 0.6);
-}
-
-.btnContainer button:hover {
-    background-color: rgb(0, 220, 0, 1);
 }
