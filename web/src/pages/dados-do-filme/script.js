@@ -27,9 +27,12 @@ function deletarFilme() {
     axios.delete(`http://localhost:3333/filmes/${id}`)
         .then(() => {
             console.log("Sucesso!")
+            location.href = "../lista-de-filmes/index.html"
         })
         .catch((err) => {
             console.error("DEU ERRO: " + err)
+            var span = document.querySelector("#requestError")
+            span.innerText = "ERRO: " + err
         })
 }
 

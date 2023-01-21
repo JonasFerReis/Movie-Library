@@ -46,3 +46,12 @@
 .deleteModal button {
     margin-top: 4em;
 }
+
+#requestError {
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15pt;
+}

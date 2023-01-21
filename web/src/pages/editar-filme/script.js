@@ -133,9 +133,12 @@ function editarFilme() {
         axios.put(`http://localhost:3333/filmes/${id}`, FILME)
             .then((res) => {
                 console.log(res)
+                location.href = "../lista-de-filmes/index.html"
             })
             .catch((err) => {
                 console.error("ERRO:" + err)
+                var span = document.querySelector("#requestError")
+                span.innerText = "ERRO: " + err
             })
     }
 }

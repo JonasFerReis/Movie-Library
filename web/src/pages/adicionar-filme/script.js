@@ -115,8 +115,11 @@ function adicionarFilme() {
         
         axios.post("http://localhost:3333/filmes", FILME).then(() => {
             console.log("Sucesso!")
+            location.href = "../lista-de-filmes/index.html"
         }).catch((err) => {
             console.log("ERRO:" + err)
+            var span = document.querySelector("#requestError")
+            span.innerText = "ERRO: " + err
         })
     }
     else {
